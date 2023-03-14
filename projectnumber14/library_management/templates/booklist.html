@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booklist</title>
+</head>
+<body>
+<h3>Books</h3>
+<div>
+    {%for book in books %}
+
+        {% if book.available is True %}
+            <li>{{book.author}} wrote {{book.title}}.</li>
+        {%endif%}
+    {%endfor%}
+
+    
+
+
+
+</div>
+</body>
+</html>
