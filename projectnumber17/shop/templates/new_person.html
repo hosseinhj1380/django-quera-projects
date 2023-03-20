@@ -1,0 +1,29 @@
+<h2>New Person</h2>
+<form method="POST" >{% csrf_token %}
+
+    {{form.as_p}}
+
+    <button type="submit" class="save btn btn-default">Save</button>
+</form>
+    
+        {% comment %} <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+      
+        <label for="height">Height (cm):</label>
+        <input type="number" id="height" name="height">
+      
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age">
+      
+        <input type="submit" value="Save">
+      </form>
+       {% endcomment %}
+
+
+
